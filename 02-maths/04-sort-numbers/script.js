@@ -11,11 +11,11 @@
         let value = numbers.value;
         let array = value.split(",");
 
-          let sortNumbers = function() {
-            array.sort(function(a, b){return parseInt(a) - parseInt(b)});
-            alert(array);
-        }
-        sortNumbers();
+
+        array.sort(function (a, b) { return parseInt(a) - parseInt(b) });
+        alert(array);
+
+
     });
 
 })();

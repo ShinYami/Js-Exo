@@ -9,11 +9,11 @@
         // your code here
         let i = 1;
         let numbers = "";
-        while ((i*i) < 21) {
-            if (i%i === 0) {
-                let x = i*i;
-                numbers = numbers + " , " + x;
-            }
+        while ((i * i) < 21) {
+
+            let square = i * i;
+            numbers = numbers + " , " + square;
+
             i += 1;
         }
         alert(numbers.substring(2));
