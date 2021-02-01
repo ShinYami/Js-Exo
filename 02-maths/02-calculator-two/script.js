@@ -6,6 +6,28 @@
 
     const performOperation = operation => {
         // perform the operation
+
+        let numberOne = parseInt(document.getElementById("op-one").value);
+        let numberTwo = parseInt(document.getElementById("op-two").value);
+        switch (operation) {
+            case 'addition':
+                let resultAddition = numberOne + numberTwo;
+                alert(resultAddition);
+            break;
+            case 'substraction':
+                let resultSubstraction = numberOne - numberTwo;
+                alert(resultSubstraction);
+            break;
+            case 'multiplication':
+                let resultMultiplication = numberOne * numberTwo;
+                alert(resultMultiplication);
+            break;
+            case 'division':
+                let resultDivision = numberOne / numberTwo;
+                alert(resultDivision);
+            break;
+        }
+
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

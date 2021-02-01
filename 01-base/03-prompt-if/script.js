@@ -7,5 +7,15 @@
   console.log('Hello Woods programmer');
 
   // YOUR CODE HERE
+  let userName = prompt("Yo What's your name ?");
+
+  let cookie = prompt("Yo " + userName + " I've cookies, do you want some ?"); 
+    if (cookie === "Yes" || "yes" ) {
+        alert('Nice dude, here is some for you!');
+      }
+        else {
+          alert('Nevermind dude');
+        }
+    
 })();
 
