@@ -5,5 +5,35 @@
 (() => {
 
     // your code here
+    document.getElementById('red').onclick = bgred;
+
+    function bgred() {
+        document.body.style.backgroundColor = "red";
+        return false;
+    }
+
+    document.getElementById('green').onclick = bggreen;
+
+    function bggreen() {
+        document.body.style.backgroundColor = "green";
+        return false;
+    }
+
+    document.getElementById('yellow').onclick = bgyellow;
+
+    function bgyellow() {
+        document.body.style.backgroundColor = "yellow";
+        return false;
+    }
+
+    document.getElementById('blue').onclick = bgblue;
+
+    function bgblue() {
+        document.body.style.backgroundColor = "blue";
+        return false;
+    }
 
 })();
+
+// or EventTarget.addEventListener()
+

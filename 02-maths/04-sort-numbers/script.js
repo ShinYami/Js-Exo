@@ -11,10 +11,8 @@
         let value = numbers.value;
         let array = value.split(",");
 
-
         array.sort(function (a, b) { return parseInt(a) - parseInt(b) });
         alert(array);
-
 
     });
 
