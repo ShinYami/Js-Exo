@@ -14,5 +14,13 @@
         "Lucas",
     ]);
 
+
+
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people.size);
+        if (people.has("Alexandre")) {
+            console.log("Alexandre is part of the set");
+        };
+    });
 })();
