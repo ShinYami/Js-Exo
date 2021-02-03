@@ -3,31 +3,36 @@
 
 (() => {
     class Animal {
+
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
 
-    class Cat extends Animal {
+    class dog extends Animal {
         constructor(name) {
+            super();
             this.name = name;
-        } static greeting = "zboul";
+        }
+        static greeting = 'zboul';
     }
 
-    class Dog extends Animal {
+    class cat extends Animal {
         constructor(name) {
+            super();
             this.name = name;
-        } static greeting = "zbeul";
+        }
+        static greeting = "zbeul";
     }
 
-    document.getElementById("run").addEventListener("click", () => {
+    let nameDog = new dog('Anna');
+    let nameCat = new cat('Lea');
 
-        let catName = new Cat("Joe");
-        let dogName = new Dog("Anna");
+    document.getElementById("run").addEventListener('click', () => {
+        console.log(nameDog.sayHello());
+        console.log(nameCat.sayHello());
+    })
 
-        console.log(catName.sayHello());
-        console.log(dogName.sayHello());
-    });
+})();
 
-});
+
