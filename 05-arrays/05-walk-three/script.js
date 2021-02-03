@@ -36,3 +36,4 @@
         people.forEach(element => console.log(element.firstname));
     })
 })();
+

@@ -31,7 +31,7 @@
         }
 
         // just to check in console 
-        console.log(array);
+        //console.log(array);
 
         document.getElementById("min").innerHTML = Math.min(...array);
         document.getElementById("max").innerHTML = Math.max(...array);
