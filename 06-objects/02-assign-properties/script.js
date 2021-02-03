@@ -20,6 +20,19 @@
     };
     // your code here
     document.getElementById("run").addEventListener("click", () => {
+        computers.forEach((element) => {
 
+            if (element.hasOwnProperty("available") === false) {
+                element.available = defaultProps.available;
+            }
+            if (element.hasOwnProperty("os") === false) {
+                element.os = defaultProps.os;
+            }
+            if (element.hasOwnProperty("user") === false) {
+                element.user = defaultProps.user;
+            }
+
+            console.log(element);
+        })
     })
 })();
