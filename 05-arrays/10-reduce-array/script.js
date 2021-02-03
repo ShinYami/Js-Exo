@@ -82,5 +82,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        const age = [];
+        people.forEach(element => age.push(element.age));
+        console.log(age.reduce((a, b) => a + b, 0));
+    })
 })();

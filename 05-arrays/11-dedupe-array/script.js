@@ -21,5 +21,8 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        const uniqueSet = new Set(fruits);
+        console.log(uniqueSet);
+    })
 })();

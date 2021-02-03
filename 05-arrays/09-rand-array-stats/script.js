@@ -26,7 +26,7 @@
         // Second option 
         let box = 1;
         while (box <= 10) {
-            document.getElementById("n-${box}").innerHTML = array[box - 1];
+            document.getElementById('n-${box}').innerHTML = array[box - 1];
             box++;
         }
 
