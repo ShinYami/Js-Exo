@@ -10,9 +10,9 @@
     let date = new Date();
 
     if (date.getHours() < 18) {
-        document.getElementById("target").innerHTML = "Hello!";
+        document.getElementById("target").innerText = "Hello!";
     } else {
-        document.getElementById("target").innerHTML = "Good evening!";
+        document.getElementById("target").innerText = "Good evening!";
     }
 
 })();
