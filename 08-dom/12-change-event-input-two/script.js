@@ -16,8 +16,10 @@
     pass.addEventListener('input', () => {
         if (pass.value.length >= 8 && checknums(pass.value)) {
             validity.innerHTML = 'Ok';
+            pass.setAttribute("style", "border-color:green");
         } else {
             validity.innerHTML = 'Not ok';
+            pass.setAttribute("style", "border-color:red");
         }
     })
 
