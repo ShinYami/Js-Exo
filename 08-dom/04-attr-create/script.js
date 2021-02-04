@@ -10,5 +10,5 @@
 
     target.innerHTML = `<img src=${src}></img> `;
 
-    source.parentNode.removeChild(source);
+    source.removeChild(target);
 })();
