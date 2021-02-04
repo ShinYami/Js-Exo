@@ -4,5 +4,5 @@
 (() => {
 
     // your code here
-    document.querySelector("#target").innerText = "Owned";
+    let Target = document.querySelector("#target").innerText = "Owned";
 })();

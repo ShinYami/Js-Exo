@@ -4,5 +4,11 @@
 (() => {
 
     // your code here
+    let idSource = document.getElementById('source');
+    let src = idSource.getAttribute('data-image');
+    let target = document.getElementById('target');
 
+    target.innerHTML = `<img src=${src}></img> `;
+
+    source.parentNode.removeChild(source);
 })();
