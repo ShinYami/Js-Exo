@@ -3,4 +3,14 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', () => {
+
+        function getPost(){
+            window.lib.getPosts((error, post) => {
+                post.forEach(post => console.log(post));
+            });
+        }
+        console.log(getPost);
+        // idk if its supposed to work like this..
+    })
 })();
