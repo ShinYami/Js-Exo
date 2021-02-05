@@ -3,16 +3,13 @@
 
 (() => {
     // your code here
-    const run = document.getElementById('run');
-
-    run.addEventListener('click',() =>{
+    document.getElementById('run').addEventListener('click',() =>{
         lib.getPosts(callback);
 
-        function callback (err, articles) {
+        function callback (error, articles) {
             console.log(articles)
         }
 
     })
-        // idk if its supposed to work like this..
-    
+
 })();

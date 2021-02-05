@@ -5,24 +5,16 @@
 
   // to get the value of an input: document.getElementById("element-id").value
 
-  document.getElementById("run").addEventListener("click", () => {
-
     // your code here
-    let n = document.getElementById('number').value;
-
-    function factorial(n) {
-      let answer = 1;
-      if (n == 0 || n == 1) {
-        return answer;
-      } else {
-        for (var i = n; i >= 1; i--) {
-          answer = answer * i;
-        }
-        return answer;
+    let input = document.getElementById("number");
+    document.getElementById("run").addEventListener("click", () => {
+      let factorial = 1;
+      for (let i = 1; i <= input.value; i++) {
+        factorial *= i;
       }
-    }
-    answer = factorial(n);
 
+      console.log(factorial);
+      alert(factorial);
   });
 
 })();
