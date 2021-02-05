@@ -17,6 +17,7 @@
         count++;
         target.innerText = count;
         localStorage.setItem('number', count);
+        console.log(count);
     })
 
     // localStorage.clear(); (clear)

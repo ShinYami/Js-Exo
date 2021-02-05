@@ -3,14 +3,16 @@
 
 (() => {
     // your code here
-    document.getElementById('run').addEventListener('click', () => {
+    const run = document.getElementById('run');
 
-        function getPost(){
-            window.lib.getPosts((error, post) => {
-                post.forEach(post => console.log(post));
-            });
+    run.addEventListener('click',() =>{
+        lib.getPosts(callback);
+
+        function callback (err, articles) {
+            console.log(articles)
         }
-        console.log(getPost);
-        // idk if its supposed to work like this..
+
     })
+        // idk if its supposed to work like this..
+    
 })();
